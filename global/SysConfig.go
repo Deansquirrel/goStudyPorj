@@ -12,7 +12,10 @@ type total struct {
 }
 
 type testConfig struct {
-	TimeoutNS  time.Duration `toml:"timeoutNS"`
-	Lps        uint32        `toml:"lps"`
+	//相应超时时间
+	TimeoutNS time.Duration `toml:"timeoutNS"`
+	//每秒载荷量
+	Lps uint32 `toml:"lps"`
+	//负载持续时间
 	DurationNS time.Duration `toml:"durationNS"`
 }
